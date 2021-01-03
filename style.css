@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(Img/background.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: rgba(29, 33, 61, 0.5);
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+.logo {
+  width: 155px;
+}
+.logo img {
+  width: 25px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.user {
+  display: flex;
+  align-items: center;
+  margin-left: 550px;
+  color: #fff;
+  font-weight: 500;
+}
+.user img {
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.sidebar {
+  width: 150px;
+  height: 100vh;
+  background: rgba(29, 33, 58, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.search_icon {
+  width: 20px;
+  display: block;
+  margin: 100px auto 0;
+}
+.social_link {
+  width: 20px;
+  display: block;
+  margin: 180px auto 0;
+  text-align: center;
+}
+.social_link img {
+  margin-bottom: 30px;
+  height: 20px;
+}
+.info_icon {
+  position: absolute;
+  width: 20px;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+.msg_container {
+  width: 500px;
+  height: 250px;
+  position: absolute;
+  left: 14%;
+  top: 55%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+#slider {
+  display: inline-flex;
+  transition: 0.5s;
+}
+.msg_col {
+  width: 500px;
+  height: 250px;
+}
+.msg_col h1 {
+  color: #fff;
+  font-size: 60px;
+  margin: 10px 0;
+  font-weight: 100;
+}
+.msg_col p {
+  color: #ddd;
+  font-size: 12px;
+  line-height: 20px;
+}
+.msg_col a {
+  color: #555;
+  display: inline-block;
+  text-decoration: none;
+  background: #fff;
+  font-size: 15px;
+  padding: 10px 35px;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+.controller {
+  width: 1px;
+  height: 300px;
+  display: block;
+  background: #c0c0c0;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  right: 50px;
+}
+#line1,
+#line2,
+#line3,
+#line4 {
+  width: 10px;
+  height: 75px;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+#active {
+  width: 5px;
+  height: 75px;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
